@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-image: linear-gradient(100deg, rgb(194, 136, 253), #ccf093);
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+  position: absolute;
+  left: 33.33%;
+  width: 30vw;
+  margin: 100px auto;
+  border-left: rgb(209, 206, 206) solid 1px;
+  border-right: rgb(209, 206, 206) solid 1px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
+  font-size: 0.9em;
+}
+input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: auto;
+  border: none;
+  outline: none;
+}
+/*input doesn't accept the pseudo class :after & :before*/
+
+.header {
+  color: white;
+  height: 40px;
+  background-color: rgb(65, 63, 65);
+  border-top: rgb(209, 206, 206) solid 1px;
+  border-radius: 5px 5px 0 0;
+  padding: 4%;
+}
+
+.tag-input-container {
+  min-height: 30px;
+  background-color: white;
+  padding: 3%;
+  border-bottom: 1px solid rgb(209, 206, 206, 0.8);
+}
+.tag-input-container ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+.tag-input-container li {
+  list-style: none;
+}
+.tag-input-container li.email {
+  color: rgb(199, 198, 198);
+  font-size: 0.8rem;
+  list-style: none;
+  border: rgb(170, 170, 168) 0.5px solid;
+  border-radius: 3.5px;
+  margin: 1px 2px;
+  cursor: default;
+}
+/* .tag-input-container li.email::after {
+  content: "\00d7";
+  cursor: pointer;
+} */
+.tag-input-container li.email:hover {
+  background-color: rgb(243, 161, 131);
+  color: rgb(68, 68, 67);
+  border-color: coral;
+}
+.subject {
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid rgb(209, 206, 206, 0.8);
+}
+.content {
+  min-height: 200px;
+  background-color: rgb(255, 255, 255);
+  padding: 3%;
+}
+/*input .content{
+  min-height: 500px;
+}*/
+.button {
+  height: 35px;
+  background-color: rgb(184, 182, 182);
+  border-radius: 0 0 5px 5px;
+  border-bottom: rgb(209, 206, 206) solid 1px;
+  padding: 3%;
+}
+li input {
+  max-width: 80px;
+  background-color: #f4f4f4;
+  border: #999999 solid 1px;
+  border-radius: 5px;
+}
+.remove-element {
+  color: #b4b3b1;
+  border: none;
+  cursor: pointer;
+}
+li button {
+  color: #b4b3b1;
+  border: none;
+  cursor: pointer;
+}
